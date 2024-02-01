@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (4 pts)
+# DONE: 1. (4 pts)
 #
 #   As you saw in your pre-class quiz, we can also define functions that take
 #   information and do stuff with it. This information that the function uses
@@ -22,9 +22,12 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def name_and_color(name, color):
+    print(f"Your name is {name} and your favorite color is {color}")
+name_and_color("John", "green")
 
 ###############################################################################
-# TODO: 2. (4 pts)
+# DONE: 2. (4 pts)
 #
 #   Now, let's do something similar, but let's use keyword arguments (this is
 #   also something that you saw in the pre-class materials).
@@ -54,3 +57,10 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def display_user_info(information):
+    for x in information:
+        print(x)
+
+info= ["Name=John Smith", "Email=jsmith@gmail.com", "Age=19"]
+
+display_user_info(info)
